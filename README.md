@@ -18,4 +18,4 @@ Documento del Proyecto Fin de Grado
 Generación de la Introducción.
 
 - Preguntas generales a Blockchain.
-- Introducción a los dos proyectos que se van a desarrollar. 
+- Presentación de los dos proyectos que se van a desarrollar. 
