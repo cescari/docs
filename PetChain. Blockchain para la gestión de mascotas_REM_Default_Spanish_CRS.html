@@ -2022,7 +2022,7 @@ Carlos Escario Bajo</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-traspasar weis cuando se haga una modificación de los datos de una mascota, desde el veterinario modificador hasta el veterinario que dio de alta a la mascota.</em>
+traspasar weis cuando se haga una modificación de los datos de una mascota, desde el veterinario modificador hasta el veterinario que dio de alta a la mascota, que estarán almacenados en el balance del SmartContract.</em>
 </td>
 </tr>
 <tr>
@@ -2129,7 +2129,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">FRQ-0005</th>
 <th align="left" valign="top" width="100%">
-Campos no modificables en la Modificación.</th>
+Modificación de datos de una mascota</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2170,7 +2170,17 @@ Iciar García-Ochoa</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-impedir en la opción de Modificación de datos de la mascota, que el usuario cambie los datos asociados al veterinario identificador y los datos de nacimiento correspondientes a la mascota sobre la cual se están realizando modificaciones.</em>
+Como veterianrio quiero poder modificar los datos sanitarios  de una mascota, en concreto:
+<br />- Peligrosidad.
+<br />- Nº de pasaporte.
+<br />- Aptitud.
+<br />- Fecha de revisión.
+<br />- Estado.
+<br />- Cicatrices.
+<br />- Vacunas.
+<br />- Observaciones.
+<br />
+</em>
 </td>
 </tr>
 <tr>
@@ -2203,7 +2213,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">FRQ-0006</th>
 <th align="left" valign="top" width="100%">
-Campos no modificables en la Baja de mascotas</th>
+Baja de una mascota</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2244,7 +2254,12 @@ Iciar García-Ochoa</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-impedir en la opción de Baja de mascotas que el usuario cambie los datos asociados al veterinario identificador.</em>
+Como veterinario quiero poder marcar una mascota como fallecida. En concreto indicar:
+<br />- Causa del fallecimiento.
+<br />- Número del veterinario.
+<br />- Nombre del veterinario.
+<br />- Apellidos del veterinario.
+<br />- Colegio del veterinario.</em>
 </td>
 </tr>
 <tr>
@@ -2318,7 +2333,7 @@ Carlos Escario Bajo</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-visualizar un listado con el saldo de weis que tiene cada veterinario, </em>
+mostrar un listado con las transacciones recibidas de otros veterinarios por haber modificado los datos de una mascota dada de alta por él y el saldo total en ethers de su cuenta. , </em>
 </td>
 </tr>
 <tr>
@@ -2346,12 +2361,12 @@ Ninguno</td>
 </tr>
 </table>
 <p />
-<a name="FRQ-0008" />
+<a name="FRQ-0009" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
-<th align="left" valign="top">FRQ-0008</th>
+<th align="left" valign="top">FRQ-0009</th>
 <th align="left" valign="top" width="100%">
-Validación de campos</th>
+Alta de una mascota</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -2376,6 +2391,102 @@ Carlos Escario Bajo</a>
 <td align="left" valign="top" colspan="1">
 <ul>
 <li>
+<a href="#STK-0003">
+Iciar García-Ochoa</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como veterinario quisiera dar de alta una mascota en el sistema, mediante un formulario en la pantalla de "Alta de Mascotas", que contenga los campos imprescindibles para identificar a un animal, en concreto sería necesarios:
+<br />- Nombre del animal.
+<br />- Fecha de implantación del chip.
+<br />- Alta en la base de datos.
+<br />- Número de identificación.
+<br />- Raza.
+<br />- Peligrosidad.
+<br />- Fecha de nacimiento.
+<br />- Capa.
+<br />- Pelo.
+<br />- Nº de pasaporte.
+<br />- Aptitud.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0010" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0010</th>
+<th align="left" valign="top" width="100%">
+Alta de un propietario</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 01/06/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Carlos Escario Bajo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Iciar García-Ochoa</a>
+<br />
+</li>
+<li>
 <a href="#STK-0002">
 Pedro Escario Bajo</a>
 <br />
@@ -2392,7 +2503,15 @@ Pedro Escario Bajo</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-mostrar en pantalla un mensaje que informa de aquellos campos que son obligatorios y no han sido rellenados en el momento de enviar el formulario.</em>
+permitir al veterianrio dar de alta al dueño de una mascota, en la página de"Alta de Mascotas", que contenga los campos imprescindibles para identificar al dueño de un animal, en concreto sería necesarios:
+<br />- Nombre.
+<br />- Apellidos.
+<br />- Dirección: Calle, Ciudad, CP y País.
+<br />- Id del documento de identificación.
+<br />- Teléfono.
+<br />El sistema además deberá tener cargados los campos de Provincia y País, con valores procedentes de un fichero <a href="#GLO-0022" title="Notación de objetos Javascript (JavaScript Object Notation).">JSON</a> estático.
+<br />
+</em>
 </td>
 </tr>
 <tr>
@@ -2406,6 +2525,90 @@ mostrar en pantalla un mensaje que informa de aquellos campos que son obligatori
 <tr>
 <th align="left" valign="top">Estado</th>
 <td align="left" valign="top" colspan="1">pendiente de verificación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0011" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0011</th>
+<th align="left" valign="top" width="100%">
+Modificación de los datos de un propietario</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 01/06/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Carlos Escario Bajo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0003">
+Iciar García-Ochoa</a>
+<br />
+</li>
+<li>
+<a href="#STK-0002">
+Pedro Escario Bajo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como veterinario quisiera poder modificar los datos del dueño de una mascota, en la página de"Modificación de Mascotas", que contenga los campos imprescindibles para identificar al dueño de un animal, en concreto sería necesarios: 
+<br />- Nombre. 
+<br />- Apellidos. 
+<br />- Dirección: Calle, Ciudad, CP y País. 
+<br />- Id del documento de identificación. 
+<br />- Teléfono.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
 </tr>
 <tr>
 <th align="left" valign="top">Estabilidad</th>
@@ -2688,7 +2891,7 @@ Carlos Escario Bajo</a>
 <td align="left" valign="top">
     El sistema deberá 
 <em>
-tener almacenados los usuarios de la aplicación en un fichero en formato <a href="#GLO-0022" title="Notación de objetos Javascript (JavaScript Object Notation).">JSON</a>, en donde se indique su numero de colegiado, nombre de usuario, contraseña y número de colegiado.</em>
+permitir el acceso a través de una llamada asíncrona  a los datos de los usuarios de la aplicación, que estarán almacenados en un fichero con formato <a href="#GLO-0022" title="Notación de objetos Javascript (JavaScript Object Notation).">JSON</a>, en donde se indicará su numero de colegiado, nombre de usuario, contraseña y número de colegiado.</em>
 </td>
 </tr>
 <tr>
@@ -2865,6 +3068,80 @@ Ninguno</td>
 </tr>
 </table>
 <p />
+<a name="NFR-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0007</th>
+<th align="left" valign="top" width="100%">
+Campos obligatorios</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 01/06/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Carlos Escario Bajo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0002">
+Pedro Escario Bajo</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+mostrar en pantalla un mensaje que informando de aquellos campos que son obligatorios y no han sido rellenados en el momento de enviar el formulario.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
 <a name="SEC-0018" />
 <h1 align="left">6 
 Matriz de rastreabilidad</h1><a name="TRM-0001" />
@@ -2884,16 +3161,22 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <a href="&#xA;                        #FRQ-0004" title="Navegación">FRQ-0004</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #FRQ-0005" title="Campos no modificables en la Modificación.">FRQ-0005</a>
+<a href="&#xA;                        #FRQ-0005" title="Modificación de datos de una mascota">FRQ-0005</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #FRQ-0006" title="Campos no modificables en la Baja de mascotas">FRQ-0006</a>
+<a href="&#xA;                        #FRQ-0006" title="Baja de una mascota">FRQ-0006</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #FRQ-0007" title="Consultar weis disponibles">FRQ-0007</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
-<a href="&#xA;                        #FRQ-0008" title="Validación de campos">FRQ-0008</a>
+<a href="&#xA;                        #FRQ-0009" title="Alta de una mascota">FRQ-0009</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0010" title="Alta de un propietario">FRQ-0010</a>
+</th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #FRQ-0011" title="Modificación de los datos de un propietario">FRQ-0011</a>
 </th>
 <th align="center" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #NFR-0001" title="Visualización">NFR-0001</a>
@@ -2913,6 +3196,9 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <th align="center" valign="top" bgcolor="#c8e0e0">
 <a href="&#xA;                        #NFR-0006" title="Autenticacion JWT">NFR-0006</a>
 </th>
+<th align="center" valign="top" bgcolor="#c8e0e0">
+<a href="&#xA;                        #NFR-0007" title="Campos obligatorios">NFR-0007</a>
+</th>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
@@ -2922,6 +3208,24 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
@@ -2933,15 +3237,6 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <td align="center" valign="top">
                 -
             </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
-</td>
 <td align="center" valign="top">
                 -
             </td>
@@ -2987,8 +3282,17 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3016,11 +3320,17 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
-</td>
+                -
+            </td>
 <td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3031,11 +3341,14 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
-</td>
+                -
+            </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
-</td>
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3072,17 +3385,26 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
-                -
-            </td>
-<td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3128,8 +3450,17 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3175,8 +3506,17 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
-<img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
-</td>
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3242,6 +3582,15 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <td align="center" valign="top">
                 -
             </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
@@ -3281,6 +3630,12 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
 <td align="center" valign="top">
@@ -3289,6 +3644,9 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
 </tr>
 <tr>
 <th align="left" valign="top" bgcolor="#c8e0e0">
@@ -3319,8 +3677,17 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3369,8 +3736,17 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3400,6 +3776,15 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
 <td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
@@ -3466,8 +3851,17 @@ Matriz de rastreabilidad</h1><a name="TRM-0001" />
                 -
             </td>
 <td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
+                -
+            </td>
+<td align="center" valign="top">
 <img src="&#xA;C:\Program Files (x86)\REM 1.2.2\xml\default\trace.gif&#xA;" />
 </td>
+<td align="center" valign="top">
+                -
+            </td>
 <td align="center" valign="top">
                 -
             </td>
